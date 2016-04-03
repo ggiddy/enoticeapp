@@ -1,0 +1,22 @@
+{
+  "name": "enoticeapp",
+  "authors": [
+    "ggiddy <nggitau@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-scroll-animate": "^0.9.8"
+  }
+}

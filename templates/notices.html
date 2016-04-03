@@ -1,0 +1,15 @@
+<div class="container-fluid">
+   <div class="row thumbnail" ng-repeat="notice in notices | reverse" when-visible="animateElementIn"
+      when-not-visible="animateElementOut">
+      <a href="" ng-click="getClicked(notice.noticeID)" >
+      <div class="col-xs-12 col-md-5 tpadnotices">
+        
+          <img class="pull-left rpad"  width="120" height="100" src="http://192.168.43.50/enotice/{{notice.picture_name}}" alt="...">
+          <strong>{{notice.name}}</strong>
+          <p class="lead">{{notice.description}}</p>
+          <small class="pull-right bg-success"><span class="glyphicon glyphicon-time"></span> {{notice.edate | date:"h:mma 'on' MMM d, y"}}</small>
+        
+      </div>
+      </a>
+    </div>
+</div> 

@@ -1,0 +1,38 @@
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div id="imagery" class="item active">
+      <img class="img-responsive" src="http://192.168.43.50/enapp/images/banner.jpg" alt="...">
+      <div class="carousel-caption">
+          <a href="enoticeapp/#/login" class="btn btn-primary">Login</a><br/><br/>
+          <a href="enoticeapp/#/register" class="btn btn-danger">Register</a>
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+
+<script type="text/javascript">
+  (function(){
+    var img = document.getElementById('imagery').firstChild;
+    img.onload=function(){
+      if (img.height>img.width) {
+        img.height='100%';
+        img.width='100%';
+      }
+    };
+  }());
+</script>

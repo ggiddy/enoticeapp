@@ -1,0 +1,36 @@
+<div class="container-fluid">
+	<div class="row thumbnail">
+		<div class="col-xs-12 col-sm-12 col-md-12 tpadnotices">
+
+		  <img class="img-responsive" src="http://192.168.43.50/enotice/{{selectedNotice.picture_name}}" alt="...">
+		  <br/>
+
+		  <p class="text-center">
+		  <strong>{{selectedNotice.name}}</strong>
+		  </p>
+		  <br/>
+
+		  <strong><em>TIMING</em></strong>
+		  <p class="animated slideInRight"><span class="glyphicon glyphicon-time"></span> {{selectedNotice.edate | date:"h:mma 'on' MMM d, y"}}</strong></p>
+		  <br/>
+
+		  <strong><em>COST</em></strong>
+		  <p class="animated slideInRight">Ksh. {{selectedNotice.charges || "FREE"}}</p>
+		  <br/>
+
+		  <strong><em>VENUE</em></strong>
+		  <p class="animated slideInRight">{{selectedNotice.venue}}</p>
+		  <br/>
+
+		  <strong><em>DESCRIPTION</em></strong>
+		  <p class="animated slideInRight">{{selectedNotice.description}}</p>
+		  <br/>
+
+		  <strong><em>CONTACTS</em></strong>
+		  <p class="animated slideInRight">{{selectedNotice.email}}</p>
+
+		  <p class="animated slideInRight"><button class="btn btn-sm btn-success"><span class="glyphicon glyphicon-ok"></span> Attending</button></p>
+
+		</div>
+    </div>
+</div> 
