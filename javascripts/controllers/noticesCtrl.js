@@ -8,11 +8,11 @@ noticesCtrl.controller('noticesController', function($scope, $rootScope, $locati
 	$scope.notices = [];
 
 	angular.element(document).ready(function(){
-                        Notice.getNotices().success(function(data){
-                                angular.forEach(data, function(value, key){
-                                        $scope.notices.push(value);
-                                });
-                        });
+        Notice.getNotices().success(function(data){
+            angular.forEach(data, function(value, key){
+                $scope.notices.push(value);
+            });
+        });
 	});
 
 	$scope.getClicked = function(id){
@@ -28,13 +28,15 @@ noticesCtrl.controller('noticesController', function($scope, $rootScope, $locati
 		return;
 	};
 
-	$scope.animateElementIn = function($el) {
-                        //$el.removeClass('hidden');
-                        $el.addClass('animated slideInLeft'); // this example leverages animate.css classes
+	$scope.animateElementIn = function($el){
+
+        //$el.removeClass('hidden');
+        $el.addClass('animated slideInLeft'); // this example leverages animate.css classes
   	};
 
-  	$scope.animateElementOut = function($el) {
-                        //$el.addClass('hidden');
-                        $el.removeClass('animated slideInLeft'); // this example leverages animate.css classes
+  	$scope.animateElementOut = function($el){
+  		
+        //$el.addClass('hidden');
+        $el.removeClass('animated slideInLeft'); // this example leverages animate.css classes
   	};
 });

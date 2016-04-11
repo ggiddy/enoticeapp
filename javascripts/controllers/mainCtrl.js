@@ -9,6 +9,9 @@ enoticeCtrl.controller('mainController', function($scope, $rootScope, $location,
                         username: ''
 	};
 
+	//the domain url of the app
+	$scope.domainUrl = Notice.domainUrl;
+
 	//function to login users into the system
 	$scope.loginUser = function(){
 
@@ -23,8 +26,8 @@ enoticeCtrl.controller('mainController', function($scope, $rootScope, $location,
 			
 			//check if the authentication was successful
 			if(!data.success){
-                                                        alert(data.message);
-                                                        return;
+                alert(data.message);
+                return;
 			}
 
 			//clear the credentials object
